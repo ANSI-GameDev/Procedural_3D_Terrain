@@ -22,7 +22,7 @@ Window::WindowClass::WindowClass() noexcept
 	wc.hIcon = static_cast<HICON>(LoadImage( 
 		GetInstance(), MAKEINTRESOURCE(IDI_ICON2),
 		IMAGE_ICON, 64, 64, 0 
-	));
+	)); 
 	wc.hCursor = nullptr;
 	wc.hbrBackground = nullptr;
 	wc.lpszMenuName = nullptr;
