@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c1747f1e-74c3-4eb4-adb9-3c1c631770e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation">
+      <UniqueIdentifier>{d6fbb95a-bba8-430a-96ab-9f7c9b5ce872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{a8937444-57ee-4df7-b748-5b326a465eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors">
+      <UniqueIdentifier>{9d937cec-b479-41e9-b8a8-95cbb8ccc19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo">
+      <UniqueIdentifier>{deefc058-f6f8-4d1d-ac5f-cf3a1a7a3b85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppBase.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="D3D11Utils.cpp" />
+    <ClCompile Include="GeometryGenerator.cpp" />
+    <ClCompile Include="GraphicsCommon.cpp" />
+    <ClCompile Include="GraphicsPSO.cpp" />
+    <ClCompile Include="ImageFilter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="PostProcess.cpp" />
+    <ClCompile Include="BitonicSort.cpp" />
+    <ClCompile Include="FluidSimulationCPU.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="SphSimulation.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="StableFluids.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="UniformGrid.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="Model.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="BillboardModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="CloudDemo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassDemo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="OceanDemo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppBase.h" />
+    <ClInclude Include="ConstantBuffers.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="D3D11Utils.h" />
+    <ClInclude Include="GeometryGenerator.h" />
+    <ClInclude Include="GraphicsCommon.h" />
+    <ClInclude Include="GraphicsPSO.h" />
+    <ClInclude Include="ImageFilter.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshData.h" />
+    <ClInclude Include="ModelInstance.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="PostProcess.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="ComputePSO.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="BitonicSort.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="Texture3D.h" />
+    <ClInclude Include="FluidSimulationCPU.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="SphSimulation.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="StableFluids.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="UniformGrid.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="SphKernels.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Noise.h" />
+    <ClInclude Include="StructuredBuffer.h" />
+    <ClInclude Include="Buffers.h" />
+    <ClInclude Include="MarchingCubes.h" />
+    <ClInclude Include="AnimationClip.h" />
+    <ClInclude Include="Model.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinnedMeshModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="OceanModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBodyActor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="SkeletalMeshActor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="FireballActor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="BillboardModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="CloudDemo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassDemo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="OceanDemo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+    <None Include="Common.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="example_class_maker.py">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="DiskSamples.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="TileableNoise.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Quaternion.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="BasicPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BasicVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BloomDownPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BloomUpPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="CombinePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyboxPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyboxVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="NormalGS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="NormalPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="NormalVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SamplingPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SamplingVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DepthOnlyPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DepthOnlyVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PostEffectsPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BitonicSortCS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="VolumeSmokePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="CloudLightingCS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="CloudDensityCS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="FireballPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BillboardGS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BillboardVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="VolumetricFirePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameExplosionPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GrassPS.hlsl">
+      <Filter>Demo</Filter>
+    </FxCompile>
+    <FxCompile Include="GrassVS.hlsl">
+      <Filter>Demo</Filter>
+    </FxCompile>
+    <FxCompile Include="OceanPS.hlsl">
+      <Filter>Demo</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
